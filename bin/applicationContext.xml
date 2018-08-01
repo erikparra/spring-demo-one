@@ -17,6 +17,8 @@
     
     <bean id="myCricketCoach" class="com.parra.springdemo.CricketCoach">
     	<property name="FortuneService" ref="myFortune"></property>
+    	<property name="EmailAddress" value="thebestcoach@parra.com"/>
+    	<property name="Team" value="The Cowboys"/>
     </bean>
 </beans>
 
