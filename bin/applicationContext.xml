@@ -14,6 +14,10 @@
     <bean id="myCoach" class="com.parra.springdemo.TrackCoach">
     	<constructor-arg ref="myFortune"/>
     </bean>
+    
+    <bean id="myCricketCoach" class="com.parra.springdemo.CricketCoach">
+    	<property name="FortuneService" ref="myFortune"></property>
+    </bean>
 </beans>
 
 
