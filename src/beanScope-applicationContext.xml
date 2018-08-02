@@ -11,7 +11,7 @@
     <bean id="myFortune" class="com.parra.springdemo.HappyFortuneService">
     </bean>
     
-    <bean id="myCoach" class="com.parra.springdemo.TrackCoach" scope="prototype">
+    <bean id="myCoach" class="com.parra.springdemo.TrackCoach">
     	<constructor-arg ref="myFortune"/>
     </bean>
 

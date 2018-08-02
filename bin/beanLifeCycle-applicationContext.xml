@@ -11,7 +11,10 @@
     <bean id="myFortune" class="com.parra.springdemo.HappyFortuneService">
     </bean>
     
-    <bean id="myCoach" class="com.parra.springdemo.TrackCoach">
+    <bean id="myCoach" 
+    	class="com.parra.springdemo.TrackCoach" 
+    	init-method="doMyStartupStuff"
+    	destroy-method="doMyDestroyStuff">
     	<constructor-arg ref="myFortune"/>
     </bean>
 
